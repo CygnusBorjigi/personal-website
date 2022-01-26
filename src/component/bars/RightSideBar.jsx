@@ -7,13 +7,19 @@ import NavButton from '../buttons/NavButton.jsx';
 
 const RightSideBar = () => {
 	const navigate = useNavigate();
+
 	const toContact = () => {
 		navigate('/contact');
-		console.log('to contacnt clicked');
 	};
+	const toSkill = () => {
+		navigate('/skill');
+	}
 	return (
-		<div className="fixed right-4 h-screen z-5 flex flex-col justify-center">
-			<div className="rotate-90">
+		<div className="fixed right-4 h-screen z-5 grid grid-rows-8">
+			<div className="row-start-4">
+				<NavButton text={ "Skill" } func={ toSkill } />
+			</div>
+			<div className="row-start-7">
 				<NavButton text={ "Say Hi ..." } func={ toContact } />
 			</div>
 		</div>

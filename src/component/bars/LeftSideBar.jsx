@@ -11,10 +11,16 @@ const LeftSideBar = () => {
 		navigate('/education');
 		console.log('to education clicked');
 	};
+	const toLife = () => {
+		navigate('/life');
+	}
 	return (
-		<div className="fixed left-4 h-screen z-5 flex flex-col justify-center">
-			<div className="-rotate-90">
+		<div className="fixed left-4 h-screen z-5 grid grid-rows-8">
+			<div className="row-start-4">
 				<NavButton text={ "Education" } func={ toEducation } />
+			</div>
+			<div className="row-start-7">
+				<NavButton text={ "Life and stuf" } func={ toLife } />
 			</div>
 		</div>
 	)
