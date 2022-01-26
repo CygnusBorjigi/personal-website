@@ -9,7 +9,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'patrick-hand': ['Patrick Hand', 'cursive'],
-				'sacramento': ['Sacramento', 'cursive']
+				'sacramento': ['Sacramento', 'cursive'],
+				'mulish': ['Mulish', 'san-serif']
 			}
 		},
 		  
