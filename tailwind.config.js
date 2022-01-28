@@ -8,9 +8,9 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'patrick-hand': ['Patrick Hand', 'cursive'],
-				'sacramento': ['Sacramento', 'cursive'],
-				'mulish': ['Mulish', 'san-serif']
+				'josefin': ['Josefin Slab', 'serif'],
+				'playfair': ['Playfair Display SC', 'serif'],
+				'zilla': ['Zilla Slab', 'serif']
 			}
 		},
 		  
