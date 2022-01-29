@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import rightArrow from './svgs/right-arrow.svg';
+import SummaryBackground from './3dModels/SummaryBackground';
 
 const Summary = () => {
 	const navigate = useNavigate();
@@ -26,6 +27,9 @@ const Summary = () => {
 					I am also able to formally prove the logical integrity of my program
 					through rigorous mathematical reasoning.
 				</p>
+			<div className='fixed top-0 left-0 h-screen w-screen -z-10'>
+				<SummaryBackground />
+			</div>
 		</div>
 	);
 };

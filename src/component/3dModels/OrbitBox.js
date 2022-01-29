@@ -4,21 +4,21 @@ import { useFrame } from 'react-three-fiber';
 const OrbitBox = ( props ) => {
 	const mesh = useRef();
 	const [time, setTime] = useState(0);
-	const { plain, radius, orbitSpeed, rotationSpeed, color, center } = props;
+	const { plain, radius, orbitSpeed, rotationSpeed, color, center, startPosition } = props;
 	const calPosition = () => {
 		if (plain === 'xy') {
-			mesh.current.position.x = Math.sin(time) * radius;
-			mesh.current.position.y = Math.cos(time) * radius;
+			mesh.current.position.x = Math.sin(time + startPosition) * radius;
+			mesh.current.position.y = Math.cos(time + startPosition) * radius;
 			mesh.current.position.z = center;
 					
 		} else if ( plain === 'xz'  ) {
-			mesh.current.position.x = Math.sin(time) * radius;
-			mesh.current.position.z = Math.cos(time) * radius;
+			mesh.current.position.x = Math.sin(time + startPosition) * radius;
+			mesh.current.position.z = Math.cos(time + startPosition) * radius;
 			mesh.current.position.y = center;
 					
 		} else {
-			mesh.current.position.y = Math.sin(time) * radius;
-			mesh.current.position.z = Math.cos(time) * radius;
+			mesh.current.position.y = Math.sin(time + startPosition) * radius;
+			mesh.current.position.z = Math.cos(time + startPosition) * radius;
 			mesh.current.position.x = center;
 					
 		}
