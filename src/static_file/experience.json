@@ -1,8 +1,10 @@
 {
-	"job1": {
-		"organization": "Dictionary of African Christian Biography",
-		"title": "Backend Developer",
-		"programmingLanguage": "JavaScript",
-		"description": "I worked with another student on building an on-site search engine for the Dictionary of African Christian Biography, which hosts 3000 biographies and serves 82,900 active users."
-	}
+	"exper": [
+		{
+			"organization": "Dictionary of African Christian Birgraphy",
+			"title": ["Backend Developer", "Undergraduate Researcher"],
+			"programmingLanguage": ["JavaScript"],
+			"description": "I worked with another student on building on implementing an on-site search engine for the Dictionary of African Christian Biography which hosts 3000 biographies and serves 82,900 active users"
+		}
+	]
 }

@@ -27,7 +27,7 @@ const TopNavBar = () => {
 		>
 			<NavButton text={ "summary" } func={ toSummary }/>
 			<div></div>
-			<NavButton text={ "experience" } funce={ toExperience } />
+			<NavButton text={ "experience" } func={ toExperience } />
 			<div></div>
 			<NavButton text={ "Personal Projects" } func={ toProject } />
 		</div>

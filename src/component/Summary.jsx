@@ -15,7 +15,7 @@ const Summary = () => {
 			</div>
 				<p className="mt-80 text-center text-xl w-1/3 mx-auto font-zilla">
 					I have spent the past year exploring full stack application
-					developemt, and has depolyed a my first application at <a href="hacktanium.io" className="text-blue-500"> hacktanium.io</a>.
+					developemt, and have depolyed a my first application at <a href="hacktanium.io" className="text-blue-500"> hacktanium.io</a>.
 				</p>
 				<p className="mt-10 text-center text-xl w-1/3 mx-auto font-zilla">
 					For my Computer Science degree, I mainly focuse on Formal Method
