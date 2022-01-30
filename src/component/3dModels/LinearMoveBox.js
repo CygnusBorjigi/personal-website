@@ -9,9 +9,9 @@ const LinearMoveBox = ( props ) => {
 
 	const calPosition = () => {
 		if (plain === 'x') {
-			mesh.current.position.y = (Math.sin(time) * range) + startPos;
-			mesh.current.position.x = yPos;
+			mesh.current.position.x = Math.sin(time + startPos) * range;
 			mesh.current.rotation.x = time * rotationSpeed;
+			mesh.current.rotation.y = time * rotationSpeed;
 		} else {
 			mesh.current.position.z = Math.sin(time + startPos) * range;
 			mesh.current.position.x = xPos;
