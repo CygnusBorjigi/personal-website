@@ -20,7 +20,6 @@ const RightSideBar = () => {
 				<NavButton text={ "Skill" } func={ toSkill } />
 			</div>
 			<div className="row-start-7">
-				<NavButton text={ "Say Hi ..." } func={ toContact } />
 			</div>
 		</div>
 	)

@@ -5,8 +5,8 @@ import instagram from '../svgs/instagram.svg';
 const BottomBar = () => {
 	return (
 		<div className="static bottom-4 w-screen h-8 flex flex-cols justify-center">
-			<img src={gitHub} alt={'github link'} className="mr-8"/>
-			<img src={instagram} alt={'instagram link'} />
+			<a href="https://github.com/CygnusBorjigi" className="h-8 w-8 mb-8"><img src={gitHub} alt={'github link'}/></a>
+			<a href="https://www.instagram.com/cygnus__borjigin/" className="h-8 w-8 mb-8 ml-4"><img src={instagram} alt={'instagram link'} /></a>
 		</div>
 	);
 }

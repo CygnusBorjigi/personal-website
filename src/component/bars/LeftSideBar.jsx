@@ -19,8 +19,7 @@ const LeftSideBar = () => {
 			<div className="row-start-4">
 				<NavButton text={ "Education" } func={ toEducation } />
 			</div>
-			<div className="row-start-7">
-				<NavButton text={ "Life and stuf" } func={ toLife } />
+		<div className="row-start-7">
 			</div>
 		</div>
 	)
