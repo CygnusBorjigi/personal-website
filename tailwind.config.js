@@ -9,8 +9,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'josefin': ['Josefin Slab', 'serif'],
-				'playfair': ['Playfair Display SC', 'serif'],
-				'zilla': ['Zilla Slab', 'serif']
+				'zilla': ['Zilla Slab', 'serif'],
+				'cormorant': ['Cormorant Infant', 'serif']
 			}
 		},
 		  
