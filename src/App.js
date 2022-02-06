@@ -9,7 +9,7 @@ import Skill from './component/Skill';
 import Summary from './component/Summary';
 import Contact from './component/Contact';
 import PersonalProject from './component/PersonalProject';
-import PersonalLife from './component/PersonalLife';
+import AboutThisWebsite from './component/AboutThisWebsite';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
 	  			<Route path='/summary' element={<Summary />} exact />
 	  			<Route path='/contact' element={<Contact />} exact />
 	  			<Route path='/projects' element={<PersonalProject />} exact />
-	  			<Route path='/life' element={<PersonalLife />} exact />
+	  			<Route path='/about' element={<AboutThisWebsite />} exact />
 	  		</Routes>
 	  	</Router>
 	  </div>
