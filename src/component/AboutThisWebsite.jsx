@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import rightArrow from './svgs/right-arrow.svg';
+import AboutPageBackground from './3dModels/AboutPageBackground';
 
 const PersonalLife = () => {
 	const navigate = useNavigate();
@@ -33,6 +34,9 @@ const PersonalLife = () => {
 			</div>
 			<div className="text-center text-xl w-1/3 mx-auto font-zilla mt-5">
 				You can view the entire source code directory on my <a href="https://github.com/CygnusBorjigi/personal-website" className="text-blue-600 ml-1">github page</a>
+			</div>
+			<div className='fixed top-0 left-0 h-screen w-screen -z-10'>
+				<AboutPageBackground />
 			</div>
 		</div>
 	);
