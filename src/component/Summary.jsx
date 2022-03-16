@@ -14,18 +14,13 @@ const Summary = () => {
 				<img src={ rightArrow } alt={ 'back button' } onClick={() => handelClick()} />	
 			</div>
 				<p className="mt-80 text-center text-xl w-1/3 mx-auto font-zilla">
-					I have spent the past year exploring full stack application
-					developemt, and have depolyed a my first application at <a href="http://hacktanium.io" className="text-blue-500"> hacktanium.io</a>.
+					I am seeking an internship opportunity in the field of software engineering to gain experience and learn from engineers who work on the real-world production of applications.
 				</p>
 				<p className="mt-10 text-center text-xl w-1/3 mx-auto font-zilla">
-					For my Computer Science degree, I mainly focuse on Formal Method
-					and Recursion Theory and for my Mathematics minor I focuse on 
-					first order logic and set theory
+					Because it is my belief that the true value of computational theories is their ability to provide real people with a better life.
 				</p>
 				<p className="mt-10 text-center text-xl w-1/3 mx-auto font-zilla">
-					Therefore, not only am I capable of writing clean and efficient code,
-					I am also able to formally prove the logical integrity of my program
-					through rigorous mathematical reasoning.
+					With a background in Formal Method and Set Theory, I am capable of writing clean and efficient code followed by a formal proof of its logical integrity through rigorous mathematical reasoning.
 				</p>
 			<div className='fixed top-0 left-0 h-screen w-screen -z-10'>
 				<SummaryBackground />
@@ -34,4 +29,5 @@ const Summary = () => {
 	);
 };
 
+ 
 export default Summary;
