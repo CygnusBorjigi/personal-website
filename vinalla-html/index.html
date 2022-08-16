@@ -8,6 +8,7 @@
     <title>Cygnus Wang</title>
 </head>
 <body>
+    <canvas id="webgl"></canvas>
     <div class="top-navbar">
         <ul>
             <li>about</li>
@@ -32,4 +33,25 @@
         </ul>
     </div>
 </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const canvas = document.querySelector('#webgl');
+        
+        const scene = new THREE.Scene();
+        const geometry = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.MeshBasicMaterial({color: 0xb3b6ba});
+        
+        const box1 = new THREE.Mesh(geometry, material);
+        scene.add(box1);
+        
+        const camera = new THREE.PerspectiveCamera(75, 800 / 600);
+        camera.position.z = 10;
+        scene.add(camera);
+
+        const renderer = new THREE.WebGLRenderer({
+            canvas: canvas
+        });
+        renderer.setSize(1600, 1200);
+        renderer.render(scene, camera);
+    </script>
 </html>
