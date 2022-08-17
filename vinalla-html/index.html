@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="indexStyle.css">
     <title>Cygnus Wang</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Silkscreen&display=swap');
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    font-size: large;
+}
+
+#name {
+    font-size: 60px;
+    font-family: 'Aboreto', cursive;
+}
+
+.top-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ul {
+    margin-right: 4vh;
+    margin-left: 4vh;
+}
+
+.top-navbar ul {
+    list-style: none;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-navbar ul {
+    list-style: none;
+    margin-top: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-navbar ul {
+    list-style: none;
+    margin-top: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+li:hover {
+    border-bottom: 1px solid aliceblue;
+}
+
+#webgl {
+    z-index: -2;
+    position: fixed;
+    top: 5vh;
+    left: 19vw;
+}
+</style>
 <body>
     <canvas id="webgl"></canvas>
     <div class="top-navbar">
