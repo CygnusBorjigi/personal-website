@@ -20,14 +20,14 @@
     <div class="middle-navbar">
         <ul>
             <li>Education</li>
-            <li></li>
+            <li id="name">Cygnys Wang</li>
             <li>Personal Project</li>
         </ul>
     </div>
 
     <div class="bottom-navbar">
         <ul>
-            <li>About This Website</li>
+            <li>links</li>
             <li></li>
             <li>Say Hi</li>
         </ul>
@@ -40,16 +40,30 @@
         const scene = new THREE.Scene();
         const geometry = new THREE.BoxGeometry(1, 1, 1);
         const material = new THREE.MeshLambertMaterial({color: 0xe0ded7});
-        
+
         const box1 = new THREE.Mesh(geometry, material);
+        const box2 = new THREE.Mesh(geometry, material);
+        const box3 = new THREE.Mesh(geometry, material);
+        const box4 = new THREE.Mesh(geometry, material);
+        const box5 = new THREE.Mesh(geometry, material);
+        const box6 = new THREE.Mesh(geometry, material);
+        const box7 = new THREE.Mesh(geometry, material);
+        const box8 = new THREE.Mesh(geometry, material);
         scene.add(box1);
+        scene.add(box2);
+        scene.add(box3);
+        scene.add(box4);
+        scene.add(box5);
+        scene.add(box6);
+        scene.add(box7);
+        scene.add(box8);
 
         const light = new THREE.PointLight( 0xffffff, 1, 100 );
         light.position.set( 5, 5, 5 );
         scene.add( light );
         
         const camera = new THREE.PerspectiveCamera(75, 800 / 600);
-        camera.position.z = 10;
+        camera.position.z = 15;
         scene.add(camera);
 
         const renderer = new THREE.WebGLRenderer({
@@ -61,8 +75,47 @@
         const clock = new THREE.Clock();
         const tick = () => {
             const deltaTime = clock.getElapsedTime();
+
             box1.rotation.x += 0.01;
             box1.rotation.y += 0.01;
+            box1.position.x = Math.sin(deltaTime) * 10
+            box1.position.y = Math.cos(deltaTime) * 10
+            
+            box2.rotation.x += 0.01;
+            box2.rotation.y += 0.01;
+            box2.position.x = Math.sin(deltaTime * 1.1) * 10
+            box2.position.y = Math.cos(deltaTime * 1.1) * 10
+
+            box3.rotation.x += 0.01;
+            box3.rotation.y += 0.01;
+            box3.position.x = Math.sin(deltaTime * 1.2) * 10
+            box3.position.y = Math.cos(deltaTime * 1.2) * 10
+
+            box4.rotation.x += 0.01;
+            box4.rotation.y += 0.01;
+            box4.position.x = Math.sin(deltaTime * 1.3) * 10
+            box4.position.y = Math.cos(deltaTime * 1.3) * 10
+
+            box5.rotation.x += 0.01;
+            box5.rotation.y += 0.01;
+            box5.position.x = Math.sin(deltaTime * 1.4) * 10
+            box5.position.y = Math.cos(deltaTime * 1.4) * 10
+            
+            box6.rotation.x += 0.01;
+            box6.rotation.y += 0.01;
+            box6.position.x = Math.sin(deltaTime * 1.5) * 10
+            box6.position.y = Math.cos(deltaTime * 1.5) * 10
+
+            box7.rotation.x += 0.01;
+            box7.rotation.y += 0.01;
+            box7.position.x = Math.sin(deltaTime * 1.6) * 10
+            box7.position.y = Math.cos(deltaTime * 1.6) * 10
+
+            box8.rotation.x += 0.01;
+            box8.rotation.y += 0.01;
+            box8.position.x = Math.sin(deltaTime * 1.7) * 10
+            box8.position.y = Math.cos(deltaTime * 1.7) * 10
+
             renderer.render(scene, camera);
             window.requestAnimationFrame(tick);
         }
