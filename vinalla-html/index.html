@@ -39,10 +39,14 @@
         
         const scene = new THREE.Scene();
         const geometry = new THREE.BoxGeometry(1, 1, 1);
-        const material = new THREE.MeshBasicMaterial({color: 0xb3b6ba});
+        const material = new THREE.MeshLambertMaterial({color: 0xe0ded7});
         
         const box1 = new THREE.Mesh(geometry, material);
         scene.add(box1);
+
+        const light = new THREE.PointLight( 0xffffff, 1, 100 );
+        light.position.set( 5, 5, 5 );
+        scene.add( light );
         
         const camera = new THREE.PerspectiveCamera(75, 800 / 600);
         camera.position.z = 10;
@@ -52,6 +56,17 @@
             canvas: canvas
         });
         renderer.setSize(1600, 1200);
-        renderer.render(scene, camera);
+
+        // animation
+        const clock = new THREE.Clock();
+        const tick = () => {
+            const deltaTime = clock.getElapsedTime();
+            box1.rotation.x += 0.01;
+            box1.rotation.y += 0.01;
+            renderer.render(scene, camera);
+            window.requestAnimationFrame(tick);
+        }
+
+        tick();
     </script>
 </html>

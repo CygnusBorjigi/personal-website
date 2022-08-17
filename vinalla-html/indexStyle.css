@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
 ul {
     font-family: 'Silkscreen', cursive;
     text-align: center;
@@ -46,7 +51,7 @@ li {
 }
 
 li:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid aliceblue;
 }
 
 #webgl {
