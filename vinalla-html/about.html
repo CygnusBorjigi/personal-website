@@ -7,6 +7,63 @@
     <link rel="stylesheet" href="about.css">
     <title>Cygnus Wang</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300&family=Silkscreen&display=swap');
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-bottom: 2px dashed white;
+}
+
+li {
+    margin-bottom: 0;
+}
+
+#name {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#title {
+    font-size: 50px;
+    padding-right: 5vw;
+}
+
+#backArrow {
+    font-size: 40px;
+    padding-top: 13px;
+}
+
+.paragraph {
+    margin-top: 5vh;
+    line-height: 2;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.certification-display {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+</style>
 <body>
     <div class="navbar">
         <ul>
@@ -15,13 +72,12 @@
             <li id="backArrow">→</li>
         </ul>
     </div>
-    <canvas class="webgl"></canvas>
     <div class="description">
         <div class="paragraph">
             I was born and raised in Beijing, China 🇨🇳, until I was 14. I currently live in the Boston Metro area in the U.S. 🇺🇸 on Green Card and expect to become a naturalized U.S. citizen in 2025.
         </div>
         <div class="paragraph">
-            I am a student at Boston University in the class of 2023, majoring in Computer Science and minoring in Mathematics. For the past three years, I have focused on theoretical Computer Science, mainly learning about formal semantics and context-free grammar, with the goal of entering a Ph.D. program in Computer Science after graduation. However, earlier this year, I made the decision to transition away from an academia focused study toward an industry focused study. I am currently studying to become a Cloud Solution architect.
+            I am a student at Boston University in the class of 2023, majoring in Computer Science and minoring in Mathematics. For the past three years, I have focused on theoretical Computer Science, mainly learning about formal semantics and context-free grammar, with the goal of entering a Ph.D. program in Computer Science after graduation. However, earlier this year, I made the decision to transition away from an academia focused study toward an industry focused study. I am currently studying to become a Cloud Solution Architect.
         </div>
         <div class="paragraph">
             So far, I have obtained three certifications from AWS, Cloud Practitioner, Solution Architect Associate, and Developer Associate.
@@ -43,8 +99,4 @@
         </div>
     </div>
 </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script>
-        const canvas = document.querySelector('#webgl');
-    </script>
 </html>
