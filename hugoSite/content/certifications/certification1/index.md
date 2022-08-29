@@ -8,7 +8,7 @@ links:
     external_link:
         text: "Verify the Certification"
         icon: "fas fa-external-link-alt"
-        href: "#"
+        href: "https://www.credly.com/badges/ae919944-fa45-4e39-8d90-8758dc3ded02/public_url"
         weight: 1
 ---
 {{< figure src="featured.png" width="50%">}}
