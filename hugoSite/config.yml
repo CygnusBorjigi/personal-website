@@ -2,3 +2,34 @@ baseURL: ''
 languageCode: en-us
 title: Cygnus Wang
 theme: hugo-digital-garden-theme
+
+params:
+  name: Cygnus Wang
+  description: Born in Beijing, China. Now a U.S. permanent resident
+  initials:  寄蜉蝣與天地 渺滄海之一粟
+
+  social:
+    - name: GitHub
+      link: https://github.com/CygnusBorjigin
+      icon: fab fa-github
+
+    - name: LinkedIn
+      link: https://www.linkedin.com/in/zhuoyi-cygnus-wang-a18695248/
+      icon: fab fa-linkedin
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
+
+    - identifier: certifications
+      name: Certifications
+      weight: 2
+    
+    - identifier: experiences
+      name: Experiences
+      weight: 3
+
+
