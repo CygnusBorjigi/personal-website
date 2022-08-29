@@ -1,11 +1,10 @@
 baseURL: ''
 languageCode: en-us
 title: Cygnus Wang
-theme: hugo-digital-garden-theme
 
 params:
-  name: Cygnus Wang
-  description: Born in Beijing, China. Now a U.S. Permanent Resident
+  name: Zhuoyi (Cygnus) Wang
+  description: Born in China. Now a U.S. Permanent Resident
   initials:  寄蜉蝣與天地 渺滄海之一粟
 
   social:
@@ -32,5 +31,15 @@ menu:
     - identifier: experiences
       name: Experiences
       weight: 3
+
+    - identifier: personalProjects
+      name: Personal Projects
+      url: /about/
+      weight: 4
+
+    - identifier: education
+      name: Education
+      url: /about/
+      weight: 5
 
 
