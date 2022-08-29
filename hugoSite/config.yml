@@ -5,7 +5,7 @@ theme: hugo-digital-garden-theme
 
 params:
   name: Cygnus Wang
-  description: Born in Beijing, China. Now a U.S. permanent resident
+  description: Born in Beijing, China. Now a U.S. Permanent Resident
   initials:  寄蜉蝣與天地 渺滄海之一粟
 
   social:
@@ -26,6 +26,7 @@ menu:
 
     - identifier: certifications
       name: Certifications
+      url: /certifications/
       weight: 2
     
     - identifier: experiences
