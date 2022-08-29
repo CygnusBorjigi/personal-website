@@ -2,13 +2,8 @@
 title: "AWS Certificated Solution Architect Associate"
 date: 2021-08-28
 draft: false
-project_tags: []
+layout: about
 weight: 1
-links:
-    external_link:
-        text: "Verify the Certification"
-        icon: "fas fa-external-link-alt"
-        href: "https://www.credly.com/badges/36a970eb-4047-4b53-8bec-cf795aaf405f/public_url"
-        weight: 1
+summary: SAA-C03
 ---
-{{< figure src="featured.png" width="50%">}}
+[verify the certification](https://www.credly.com/badges/36a970eb-4047-4b53-8bec-cf795aaf405f/public_url)

@@ -39,7 +39,7 @@ menu:
 
     - identifier: education
       name: Education
-      url: /about/
+      url: /education/
       weight: 5
 
 
