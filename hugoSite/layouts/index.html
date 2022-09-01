@@ -15,20 +15,20 @@
 	<div class="row justify-content-between my-5">
 		<!-- Garden / Blog -->
 		<div class="col-lg-4">
-			{{ with .Site.GetPage "section" "garden" }}
+			{{ with .Site.GetPage "section" "experience" }}
           	<div class="pb-4">
               	<a class="heading fs-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
           	</div>      
 			{{ if .Summary }} <p class="subheading">{{ .Summary }}</p> {{ end }}
 			{{ end }}
 			<div class="row row-cols-1 g-4 mb-5">
-				{{ range ( where site.RegularPages "Section" "garden" | first 6 ) }}
-				{{ partial "home_garden.html" . }}
+				{{ range ( where site.RegularPages "Section" "experience" | first 6 ) }}
+				{{ partial "home_experience.html" . }}
 				{{ end }}
       		</div>
-			{{ with .Site.GetPage "section" "garden" }}
+			{{ with .Site.GetPage "section" "experience" }}
 			<div class="d-flex flex-row-reverse">
-        		<a href="{{ .RelPermalink }}" role="button" class="btn btn-sm see-all">See all articles</a>
+        		<a href="{{ .RelPermalink }}" role="button" class="btn btn-sm see-all">See all experiences</a>
       		</div>
       		{{ end }}
 		</div>

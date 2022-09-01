@@ -30,6 +30,7 @@ menu:
     
     - identifier: experiences
       name: Experiences
+      url: /experience/
       weight: 3
 
     - identifier: personalProjects
